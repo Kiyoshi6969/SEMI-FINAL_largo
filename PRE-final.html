@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Click Example</title>
+	<style>
+		#myButton {
+			background-color: blue;
+			color: white;
+			font-size: 24px;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<button id="myButton" onclick="changeText()">Click me!</button>
+
+	<script>
+		function changeText() {
+			var button = document.getElementById("myButton");
+			if (button.innerHTML == "Click me!") {
+				button.innerHTML = "You clicked me!";
+				button.style.backgroundColor = "yellow";
+				button.style.color = "white";
+			} else {
+				button.innerHTML = "Click me!";
+				button.style.backgroundColor = "green";
+				button.style.color = "white";
+			}
+		}
+	</script>
+
+</body>
+</html
